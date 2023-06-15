@@ -22,16 +22,21 @@ if (confirm("would you like lowercase?") == true) {
   length += characters.lowercase;
 } else if (confirm("would you like uppercase?") == true) {
   length += characters.uppercase;
+} else {
+  window.alert("Please choose 1 character type!")
+  return ;
+  
 };
 
-if (confirm("would you like symbols?") == true) {
-  length += characters.special;
-};
 
 if (confirm("would you like numbers?") == true) {
   length += characters.numeric;
+} else if (confirm("would you like symbols?") == true) {
+  length += characters.special;
+} else {
+ window.alert("Please choose 1 character type")
+ return;
 };
-
 
 
 
